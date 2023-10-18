@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float speed;
     GameObject targetGameObject;
     Rigidbody2D rgbd2d;
+    [SerializeField] int hp = 4;
 
     private void Awake()
     {
@@ -34,5 +35,15 @@ public class Enemy : MonoBehaviour
     private void Attack()
     {
         //Debug.Log("Attack the character");
+    }
+
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+
+        if (hp < 1)
+        {
+            Destroy(gameObject);
+        }
     }
 }
