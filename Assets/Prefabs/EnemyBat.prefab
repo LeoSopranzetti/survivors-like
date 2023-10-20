@@ -167,5 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53feee29c049e74498f97ca66775726d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDestination: {fileID: 0}
-  speed: 0
+  speed: 2
+  hp: 5
+  damage: 1
