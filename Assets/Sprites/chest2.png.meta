@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64e096f4bb9673d40a2546f735c6303c
+guid: b31848ab6dbb00a4a901f5ea220605fb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,43 +116,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree
+      name: chest2_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 96
-        width: 33
-        height: 33
+        x: 1
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575075953cd2ec6429618c4fbd1a9df4
-      internalID: -1325077149
+      spriteID: c824a3a298ea23e4d80d344b5472fa9c
+      internalID: 1688127145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: health
+      name: chest2_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 257
-        width: 11
-        height: 12
+        x: 33
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3cf4af40c09aa94c8331de48a576da9
-      internalID: -1781993966
+      spriteID: fe1eea02b898c114a856c2b5a6ad12e9
+      internalID: -285887248
       vertices: []
       indices: 
       edges: []
@@ -168,8 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      health: -1781993966
-      Tree: -1325077149
+      chest2_0: 1688127145
+      chest2_1: -285887248
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
