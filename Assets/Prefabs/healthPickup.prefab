@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2389135650853969032}
+  - component: {fileID: 2389135650853969035}
   - component: {fileID: 2389135650853969033}
   - component: {fileID: 2389135650853969038}
-  - component: {fileID: 2389135650853969035}
+  - component: {fileID: 431580237581401020}
   m_Layer: 0
   m_Name: healthPickup
   m_TagString: Untagged
@@ -34,6 +35,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2389135650853969035
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2389135650853969039}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.375
 --- !u!212 &2389135650853969033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98,20 +115,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31228e68ceef9da4d9bd0db8edae9d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 20
---- !u!58 &2389135650853969035
-CircleCollider2D:
+--- !u!114 &431580237581401020
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2389135650853969039}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.375
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d5f095f4423f10428353a5da33ff76f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healAmount: 20
