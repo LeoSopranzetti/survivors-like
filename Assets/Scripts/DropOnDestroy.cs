@@ -9,7 +9,9 @@ public class DropOnDestroy : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (Random.value < chance)
+
+        float drop = Random.value;
+        if (drop < chance)
         {
             Transform t = Instantiate(healthPickup).transform;
             t.position = transform.position;
