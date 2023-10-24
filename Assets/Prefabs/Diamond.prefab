@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1441459232963585174}
   - component: {fileID: 1441459232963585171}
   - component: {fileID: 1441459232963585170}
+  - component: {fileID: -9178957712986215126}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -128,3 +129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 500
+--- !u!114 &-9178957712986215126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441459232963585175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef0049d3754b4747ac8db2b481f8ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
