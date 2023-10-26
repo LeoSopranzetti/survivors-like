@@ -4316,6 +4316,7 @@ GameObject:
   - component: {fileID: 1811170403}
   - component: {fileID: 1811170404}
   - component: {fileID: 1811170405}
+  - component: {fileID: 1811170406}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -4432,6 +4433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   currentHp: 50
+  armor: 0
   hpBar: {fileID: 1083431722}
   level: {fileID: 0}
   coins: {fileID: 0}
@@ -4462,6 +4464,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinAcquired: 0
   coinsCountText: {fileID: 1830215495}
+--- !u!114 &1811170406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811170397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b4a9aa4c0e7654eb2f7cc4869fa74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  armorTest: {fileID: 11400000, guid: 4d71648886d4db54f91fb8a887cbc2dc, type: 2}
 --- !u!1001 &1816833337
 PrefabInstance:
   m_ObjectHideFlags: 0
