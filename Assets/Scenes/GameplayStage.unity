@@ -1271,7 +1271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98062152ce4208a4e8efd1059a80c415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
   playerTilePosition: {x: 0, y: 0}
   tileSize: 20
   terrainTileHorizontalCount: 3
@@ -2758,7 +2757,6 @@ MonoBehaviour:
   enemy: {fileID: 5332780098204639098, guid: b31f2ab46e933594da8c7b331629794e, type: 3}
   spawnArea: {x: 15, y: 8}
   spawnTimer: 1
-  player: {fileID: 0}
 --- !u!4 &1417238972
 Transform:
   m_ObjectHideFlags: 0
