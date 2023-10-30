@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireWeapon : MonoBehaviour
+public class FireWeapon : WeaponBase
 {
-    [SerializeField] float timeToAttack;
-    float timer;
+
     PlayerMove playerMove;
 
     [SerializeField] GameObject firePrefab;
@@ -17,19 +16,7 @@ public class FireWeapon : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        if (timer < timeToAttack)
-        {
-            timer += Time.deltaTime;
-            return;
-        }
-
-        timer = 0;
-        SpawnFire();
-    }
-
-    private void SpawnFire()
+    public override void Attack()
     {
         if (playerMove.lastHorizontalVector == 0)
         {
