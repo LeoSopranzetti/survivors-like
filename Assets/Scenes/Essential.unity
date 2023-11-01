@@ -3828,9 +3828,8 @@ MonoBehaviour:
   experienceBar: {fileID: 1662587128}
   upgradePanelManager: {fileID: 224579903}
   upgrades:
-  - {fileID: 11400000, guid: 3a0bc00bf5ffd0741a9aed29b71e63a4, type: 2}
-  - {fileID: 11400000, guid: 5280e89523d16fc4eb377ed70f025c97, type: 2}
-  - {fileID: 11400000, guid: a0a50f8a8e0fed5499b5361fcffce061, type: 2}
+  - {fileID: 11400000, guid: c139a5fd710ceac43a083f6ebb42a3b6, type: 2}
+  acquiredUpgrades: []
 --- !u!114 &1811170405
 MonoBehaviour:
   m_ObjectHideFlags: 0
