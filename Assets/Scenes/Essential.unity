@@ -3769,6 +3769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: 0
+  vertical: 0
+  idle: 0
 --- !u!61 &1811170402
 BoxCollider2D:
   m_ObjectHideFlags: 0

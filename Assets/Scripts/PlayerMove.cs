@@ -39,6 +39,9 @@ public class PlayerMove : MonoBehaviour
             lastVerticalVector = movementVector.x;
         }
 
+        animate.idle = (movementVector.y == 0 && movementVector.x == 0) ?  true :  false;
+
+        animate.vertical = movementVector.y;
         animate.horizontal = movementVector.x;
 
         movementVector *= speed; 
