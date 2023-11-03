@@ -6,8 +6,7 @@ public class FireProjectile : MonoBehaviour
 {
     Vector3 direction;
     [SerializeField] float speed;
-    [SerializeField] int damage = 5;
-    bool hitDetected = false;
+    public int damage = 5;
 
     public void SetDirection(float dir_x, float dir_y)
     {
@@ -35,7 +34,6 @@ public class FireProjectile : MonoBehaviour
                 if (enemy != null)
                 {
                     enemy.TakeDamage(damage);
-                    hitDetected = true;
                     Destroy(gameObject);
                     break;
                 }

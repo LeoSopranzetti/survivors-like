@@ -24,6 +24,8 @@ public class FireWeapon : WeaponBase
         }
         GameObject fire = Instantiate(firePrefab);
         fire.transform.position = transform.position;
-        fire.GetComponent<FireProjectile>().SetDirection(playerMove.lastHorizontalVector, 0f);
+        FireProjectile fireProjectile = fire.GetComponent<FireProjectile>();
+        fireProjectile.SetDirection(playerMove.lastHorizontalVector, 0f);
+        fireProjectile.damage = weaponStats.damage;
     }
 }
