@@ -7,6 +7,7 @@ public class FireProjectile : MonoBehaviour
     Vector3 direction;
     [SerializeField] float speed;
     public int damage = 5;
+    float timeToLive = 6f;
 
     public void SetDirection(float dir_x, float dir_y)
     {
@@ -31,14 +32,25 @@ public class FireProjectile : MonoBehaviour
             foreach (Collider2D c in hit)
             {
                 Enemy enemy = c.GetComponent<Enemy>();
+                Character character = c.GetComponent<Character>();
                 if (enemy != null)
                 {
                     enemy.TakeDamage(damage);
                     Destroy(gameObject);
                     break;
+                } else if (character == null)
+                {
+                    Destroy(gameObject);
+                    break;
                 }
 
             }
+        }
+
+        timeToLive -= Time.deltaTime;
+        if (timeToLive < 0f)
+        {
+            Destroy(gameObject);
         }
 
 
