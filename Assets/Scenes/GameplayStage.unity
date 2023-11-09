@@ -1228,6 +1228,8 @@ GameObject:
   m_Component:
   - component: {fileID: 568680830}
   - component: {fileID: 568680831}
+  - component: {fileID: 568680832}
+  - component: {fileID: 568680833}
   m_Layer: 0
   m_Name: ----WORLD----
   m_TagString: Untagged
@@ -1277,6 +1279,33 @@ MonoBehaviour:
   terrainTileVerticalCount: 3
   fieldOfVisionHeight: 3
   fieldOfVisionWidth: 3
+--- !u!114 &568680832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568680829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a63c56d3d9678d449afa9a01e736dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+--- !u!114 &568680833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568680829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1327e1a77a52504c876a0cab76ccae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageData: {fileID: 11400000, guid: 1e2547c5696c41442b7ed20aa705e561, type: 2}
+  enemiesManager: {fileID: 1417238971}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
