@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageEvents:
   - time: 5
-    message: Hello
-    enemyToSpawn: {fileID: 0}
+    message: BATS
+    enemyToSpawn: {fileID: 11400000, guid: f06da2f43a930024286b88ce08f34532, type: 2}
     count: 3
   - time: 10
-    message: This is a 10 second message
-    enemyToSpawn: {fileID: 0}
+    message: PUMPKINS
+    enemyToSpawn: {fileID: 11400000, guid: c1a1d2c782e501148bdef97d15ce7f02, type: 2}
     count: 10
   - time: 15
-    message: This is good bye for now.
-    enemyToSpawn: {fileID: 0}
+    message: BATS
+    enemyToSpawn: {fileID: 11400000, guid: f06da2f43a930024286b88ce08f34532, type: 2}
     count: 25

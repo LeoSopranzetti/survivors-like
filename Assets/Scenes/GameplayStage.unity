@@ -2798,7 +2798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46454c736be8ae9418649a7c8f85bc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 5332780098204639098, guid: b31f2ab46e933594da8c7b331629794e, type: 3}
+  enemy: {fileID: 6369741446747843323, guid: 7deccb82eb2fc78498017232f723dabe, type: 3}
+  enemyAnimation: {fileID: 4945182639466030497, guid: 85623765e1de6044dadd2c2668a6df67, type: 3}
   spawnArea: {x: 15, y: 8}
   spawnTimer: 1
 --- !u!4 &1417238972
