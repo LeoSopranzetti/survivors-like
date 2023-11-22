@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bat
   animatedPrefab: {fileID: 4945182639466030497, guid: 85623765e1de6044dadd2c2668a6df67, type: 3}
+  stats:
+    hp: 50
+    damage: 1
+    experienceReward: 400
+    moveSpeed: 3

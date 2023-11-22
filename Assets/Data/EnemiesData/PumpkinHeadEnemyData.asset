@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: PumpkinHeadPitchFork
   animatedPrefab: {fileID: 3367077706711451846, guid: ce341b91f8a4164488204816323feec6, type: 3}
+  stats:
+    hp: 300
+    damage: 1
+    experienceReward: 400
+    moveSpeed: 1
