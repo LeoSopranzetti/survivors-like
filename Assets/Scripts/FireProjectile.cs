@@ -31,10 +31,11 @@ public class FireProjectile : MonoBehaviour
 
             foreach (Collider2D c in hit)
             {
-                Enemy enemy = c.GetComponent<Enemy>();
+                IDamageable enemy = c.GetComponent<IDamageable>();
                 Character character = c.GetComponent<Character>();
                 if (enemy != null)
                 {
+                    PostDagmage(damage, transform.position);
                     enemy.TakeDamage(damage);
                     Destroy(gameObject);
                     break;
@@ -54,5 +55,10 @@ public class FireProjectile : MonoBehaviour
         }
 
 
+    }
+
+    public void PostDagmage(int damage, Vector3 worldPosition)
+    {
+        MessageSystem.instance.PostMessage(damage.ToString(), worldPosition);
     }
 }
