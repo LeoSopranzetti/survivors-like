@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: DataContainer
   m_EditorClassIdentifier: 
   coins: 0
+  stageCompletion: 00

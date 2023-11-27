@@ -19,3 +19,9 @@ MonoBehaviour:
     enemyToSpawn: {fileID: 0}
     objectToSpawn: {fileID: 7486484330317256045, guid: 37f6bfea9f5c3ba4db3195f48fcf20d5, type: 3}
     count: 15
+  - eventType: 2
+    time: 10
+    message: You won the stage
+    enemyToSpawn: {fileID: 0}
+    objectToSpawn: {fileID: 0}
+    count: 0

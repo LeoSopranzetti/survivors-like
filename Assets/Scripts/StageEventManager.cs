@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,12 @@ public class StageEventManager : MonoBehaviour
     [SerializeField] EnemiesManager enemiesManager;
     StageTime stageTime;
     int eventIndexer;
+    PlayerWinManager playerWinManager;
+
+    private void Start()
+    {
+        playerWinManager = FindObjectOfType<PlayerWinManager>();
+    }
 
     private void Awake()
     {
@@ -35,12 +42,17 @@ public class StageEventManager : MonoBehaviour
                     }
                     break;
                 case StageEventType.WinStage:
-
+                    WinStage();
                     break;
             }
             Debug.Log(stageData.stageEvents[eventIndexer].message);
             eventIndexer += 1;
         }
+    }
+
+    private void WinStage()
+    {
+        playerWinManager.Win();
     }
 
     private void SpawnEnemy()
@@ -54,4 +66,6 @@ public class StageEventManager : MonoBehaviour
         positionToSpawn += UtilityTools.GenerateRandomPositionSquarePatterns(new Vector2(5f, 5f));
         SpawnManager.instance.SpawnObject(positionToSpawn, stageData.stageEvents[eventIndexer].objectToSpawn);
     }
+
+
 }

@@ -1230,7 +1230,6 @@ GameObject:
   - component: {fileID: 568680831}
   - component: {fileID: 568680832}
   - component: {fileID: 568680833}
-  - component: {fileID: 568680834}
   - component: {fileID: 568680835}
   m_Layer: 0
   m_Name: ----WORLD----
@@ -1308,20 +1307,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageData: {fileID: 11400000, guid: 1e2547c5696c41442b7ed20aa705e561, type: 2}
   enemiesManager: {fileID: 1417238971}
---- !u!114 &568680834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568680829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47d6ba2aa084ef94ea403bcea85f1fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToCompleteLevel: 30
-  levelCompletePanel: {fileID: 0}
 --- !u!114 &568680835
 MonoBehaviour:
   m_ObjectHideFlags: 0
