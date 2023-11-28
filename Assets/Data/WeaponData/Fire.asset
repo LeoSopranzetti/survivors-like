@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Fire
   stats:
-    damage: 1
+    damage: 50
     timeToAttack: 1
     numerOfAttacks: 2
   weaponBasePrefab: {fileID: 3286909216879345813, guid: 0aef6de2ce8c6b443b0be87bcd15c0fb, type: 3}
