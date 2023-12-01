@@ -16,6 +16,6 @@ public class CoinsText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Coins" + dataContainer.coins.ToString();
+        text.text = "Coins: " + dataContainer.coins.ToString();
     }
 }

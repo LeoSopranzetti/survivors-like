@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
 
     public int maxHp = 1000;
     public int currentHp = 1000;
-
+    public float damageBonus;
     public int armor = 0;
     public float hpRegenerationRate = 1f;
     public float hpRegenerationTimer;
@@ -19,6 +19,8 @@ public class Character : MonoBehaviour
     [HideInInspector] public Coins coins;
     private bool isDead;
 
+    [SerializeField] DataContainer dataContainer;
+
     private void Awake()
     {
         level = GetComponent<Level>();
@@ -28,7 +30,20 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
+        ApplyPersistentUpgrades();
         hpBar.SetState(currentHp, maxHp);
+    }
+
+    private void ApplyPersistentUpgrades()
+    {
+        int hpUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.HP);
+
+        maxHp += maxHp / 10 * hpUpgradeLevel;
+        currentHp = maxHp;
+
+        int damageUpggradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.Damage);
+
+        damageBonus = 1f + 0.1f * damageUpggradeLevel;
     }
 
     private void Update()

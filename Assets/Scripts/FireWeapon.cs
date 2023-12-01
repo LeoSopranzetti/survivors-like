@@ -42,7 +42,7 @@ public class FireWeapon : WeaponBase
 
             FireProjectile fireProjectile = fire.GetComponent<FireProjectile>();
             fireProjectile.SetDirection(playerMove.lastHorizontalVector, 0f);
-            fireProjectile.damage = weaponStats.damage;
+            fireProjectile.damage = GetDamage();
         }
 
     }

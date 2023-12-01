@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
@@ -10,10 +11,12 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] WeaponData startingWeapon;
 
     List<WeaponBase> weapons;
+    Character character;
 
     private void Awake()
     {
         weapons = new List<WeaponBase>();
+        character = GetComponent<Character>();
     }
 
     private void Start()
@@ -29,6 +32,7 @@ public class WeaponManager : MonoBehaviour
 
         weaponBase.SetData(weaponData);
         weapons.Add(weaponBase);
+        weaponBase.AddOwnerCharacter(character);
         Level level = GetComponent<Level>();
 
         if (level != null)
