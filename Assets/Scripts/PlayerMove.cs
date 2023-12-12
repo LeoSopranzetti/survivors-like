@@ -8,9 +8,13 @@ public class PlayerMove : MonoBehaviour
     [HideInInspector]
     public Vector3 movementVector;
     [HideInInspector]
-    public float lastHorizontalVector;
+    public float lastHorizontalDeCoupledVector;
     [HideInInspector]
-    public float lastVerticalVector;
+    public float lastVerticalDeCoupledVector;
+    [HideInInspector]
+    public float lastHorizontalCoupledVector;
+    [HideInInspector]
+    public float lastVerticalCoupledVector;
     [SerializeField] float speed = 3f;
     Animate animate;
 
@@ -21,6 +25,15 @@ public class PlayerMove : MonoBehaviour
         animate = GetComponent<Animate>();
     }
 
+    private void Start()
+    {
+        lastHorizontalDeCoupledVector = -1f;
+        lastVerticalDeCoupledVector = 1f;
+
+        lastHorizontalCoupledVector = -1f;
+        lastVerticalCoupledVector = 1f;
+    }
+
 
 
     // Update is called once per frame
@@ -29,14 +42,20 @@ public class PlayerMove : MonoBehaviour
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
 
+        if (movementVector.x != 0 || movementVector.y != 0)
+        {
+            lastHorizontalCoupledVector = movementVector.x;
+            lastVerticalCoupledVector = movementVector.y;
+        }
+
         if (movementVector.x != 0)
         {
-            lastHorizontalVector = movementVector.x;
+            lastHorizontalDeCoupledVector = movementVector.x;
         }
 
         if (movementVector.y != 0)
         {
-            lastVerticalVector = movementVector.x;
+            lastVerticalDeCoupledVector = movementVector.y;
         }
 
         animate.idle = (movementVector.y == 0 && movementVector.x == 0) ?  true :  false;

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3286909216879345813
+--- !u!1 &4777408110531400715
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3286909216879345812}
-  - component: {fileID: 3286909216879345819}
+  - component: {fileID: 4777408110531400714}
+  - component: {fileID: 4777408110531400717}
   m_Layer: 0
-  m_Name: wpn_fire
+  m_Name: wpn_Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3286909216879345812
+--- !u!4 &4777408110531400714
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3286909216879345813}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 4777408110531400715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32,16 +32,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3286909216879345819
+--- !u!114 &4777408110531400717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3286909216879345813}
+  m_GameObject: {fileID: 4777408110531400715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c1913b90688a8143a33d37c578e4892, type: 3}
+  m_Script: {fileID: 11500000, guid: 815e74a051ad232408ff9afe8750a9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 0}
@@ -50,6 +50,5 @@ MonoBehaviour:
     timeToAttack: 0
     numerOfAttacks: 0
   vectorOfAttack: {x: 0, y: 0}
-  attackDirection: 2
-  firePrefab: {fileID: 8944985340461787068, guid: 77390b00727d1ad47abc627fea8f32d5, type: 3}
-  spread: 0.5
+  attackDirection: 1
+  bulletPrefab: {fileID: 8944985340461787068, guid: 77390b00727d1ad47abc627fea8f32d5, type: 3}
